@@ -68,6 +68,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_spinkit",
+      "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_spinkit-4.1.2+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/DominicKing/Developer/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -82,6 +88,18 @@
     {
       "name": "google_api_availability",
       "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/google_api_availability-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.3"
     },
@@ -114,6 +132,12 @@
       "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.4",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "pedantic",
+      "rootUri": "file:///Users/DominicKing/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "petitparser",
@@ -194,7 +218,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-08-03T08:28:57.084050Z",
+  "generated": "2020-08-03T15:05:19.204736Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

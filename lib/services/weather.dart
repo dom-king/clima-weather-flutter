@@ -1,4 +1,23 @@
+import 'package:clima/services/location.dart';
+import 'package:clima/services/networking.dart';
+
+const apiKey = 'b43a5b0af0ae5a6333207fcf489b983e';
+const openWeatherMapUrl = 'https://samples.openweathermap.org/data/2.5/weather';
+
 class WeatherModel {
+
+  // call this to get weather data and it's dynamic is changes regularly
+  Future<dynamic> getLocationWeather() async {
+    Location location = Location();
+    // can only wait on futures - have to wait for this method to complete in order to get lat and long
+    await location.getCurrentLocation();
+    // gets the location co-ordinates before running the get data method
+    NetworkHelper networkHelper = NetworkHelper('$openWeatherMapUrl?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey');
+    var weatherData = await networkHelper.getData();
+
+    return weatherData;
+  }
+
   String getWeatherIcon(int condition) {
     if (condition < 300) {
       return '🌩';
