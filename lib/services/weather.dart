@@ -1,10 +1,19 @@
 import 'package:clima/services/location.dart';
 import 'package:clima/services/networking.dart';
+import 'package:flutter/services.dart';
 
 const apiKey = '';
 const openWeatherMapUrl = 'https://samples.openweathermap.org/data/2.5/weather';
 
 class WeatherModel {
+
+  Future<dynamic> getCityWeather(String cityName) async {
+    var url = '$openWeatherMapUrl?q=$cityName&appid=$apiKey';
+    NetworkHelper networkHelper = NetworkHelper(url);
+
+    var weatherData = await networkHelper.getData();
+    return weatherData;
+  }
 
   // call this to get weather data and it's dynamic is changes regularly
   Future<dynamic> getLocationWeather() async {
